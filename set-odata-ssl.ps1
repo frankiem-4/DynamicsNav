@@ -13,7 +13,7 @@
 $serverInstance = "NameofInstance"
 $PublicMachineName = "servername.company.com"
 $odataPort = "7048"
-$certThumbprint
+$certThumbprint = "ca06f56b258b7a0d4f2b05470939478651151984"
 
 Set-NAVServerConfiguration $serverInstance -KeyName “ServicesCertificateThumbprint” -KeyValue $certThumbprint
 Set-NAVServerConfiguration $serverInstance -KeyName “PublicODataBaseUrl” -KeyValue (‘https://' +$PublicMachineName +‘:'+$odataPort+'/' + $serverInstance + ‘/OData/’)
